@@ -1,4 +1,4 @@
-# Gestão de Pedidos de Restaurantes - Miniprojecto Programação Orientado a Objeto
+# Gestão de Pedidos de Restaurantes - Miniprojecto Programação Orientado a Objeto em Java
 
 Para melhorar o atendimento a clientes dos variados restaurantes da cidade da Praia, pretende-se implementar um sistema de gestão de pedidos nos restaurantes, que pode ser utilizada pelos garçons para atender os clientes  em uma mesa especifica. 
 
