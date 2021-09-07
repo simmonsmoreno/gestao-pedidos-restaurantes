@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="anchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="650.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gestaorestaurantesfx.controller.FXMLCardapioDialogController">
+   <children>
+      <Button layoutX="20.0" layoutY="460.0" mnemonicParsing="false" onMouseClicked="#voltar" prefHeight="27.0" prefWidth="107.0" style="-fx-background-color: transparent; -fx-border-color: #404040;" text="Voltar" textFill="#404040">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <Label fx:id="lblCategoria" layoutX="20.0" layoutY="14.0" text="Categoria" textFill="#404040">
+         <font>
+            <Font name="System Italic" size="21.0" />
+         </font>
+      </Label>
+      <TableView fx:id="tableViewPratos" layoutX="20.0" layoutY="58.0" prefHeight="390.0" prefWidth="610.0">
+        <columns>
+            <TableColumn fx:id="tableColumnIdPratos" prefWidth="120.0" text="id" />
+          <TableColumn fx:id="tableColumnDescricaoPratos" prefWidth="285.0" text="Descrição" />
+            <TableColumn fx:id="tableColumnPrecoPratos" prefWidth="155.0" text="Preço" />
+        </columns>
+         <columnResizePolicy>
+            <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+         </columnResizePolicy>
+      </TableView>
+      <Button fx:id="btnAdd" layoutX="461.0" layoutY="460.0" mnemonicParsing="false" onMouseClicked="#addCarrinho" prefHeight="27.0" prefWidth="168.0" style="-fx-background-color: transparent; -fx-border-color: #404040;" text="Adicionar ao Carrinho" textFill="#404040">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+         <graphic>
+            <FontAwesomeIconView fill="#404040" glyphName="CART_PLUS" size="15" />
+         </graphic>
+      </Button>
+   </children>
+</AnchorPane>

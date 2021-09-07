@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="540.0" prefWidth="900.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gestaorestaurantesfx.controller.FXMLPedidosCozinhaProcessarPedidosController">
+   <children>
+      <ImageView fitHeight="540.0" fitWidth="900.0" pickOnBounds="true">
+         <image>
+            <Image url="@../fundos/home_background_1.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="492.0" fitWidth="798.0" layoutX="55.0" layoutY="17.0" opacity="0.83" pickOnBounds="true">
+         <image>
+            <Image url="@../fundos/fundo.png" />
+         </image>
+      </ImageView>
+      <Pane layoutX="51.0" layoutY="18.0" prefHeight="492.0" prefWidth="798.0" style="-fx-background-color: transparent;">
+         <children>
+            <TableView fx:id="tableViewPedidos" layoutX="397.0" prefHeight="439.0" prefWidth="400.0">
+              <columns>
+                <TableColumn fx:id="tableViewPedidosNumeroPedido" prefWidth="75.0" text="Numero" />
+                <TableColumn fx:id="tableViewPedidosMesa" prefWidth="75.0" text="Mesa" />
+                  <TableColumn fx:id="tableViewPedidosData" prefWidth="75.0" text="Data" />
+                  <TableColumn fx:id="tableViewPedidosPreço" prefWidth="75.0" text="Preço" />
+              </columns>
+               <columnResizePolicy>
+                  <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+               </columnResizePolicy>
+            </TableView>
+            <Button fx:id="btnProcessar" layoutX="666.0" layoutY="450.0" mnemonicParsing="false" onMouseClicked="#processarPedidos" prefHeight="27.0" prefWidth="132.0" style="-fx-background-color: transparent; -fx-border-color: white;" text="Processar Pedidos" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font></Button>
+            <GridPane fx:id="gridPanel" layoutX="24.0" layoutY="58.0" prefHeight="191.0" prefWidth="342.0">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <Label alignment="CENTER_RIGHT" contentDisplay="RIGHT" text="Numero Pedido:" textFill="WHITE" GridPane.halignment="RIGHT">
+                     <GridPane.margin>
+                        <Insets right="10.0" />
+                     </GridPane.margin>
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER_RIGHT" contentDisplay="RIGHT" text="Numero Mesa:" textFill="WHITE" GridPane.halignment="RIGHT" GridPane.rowIndex="1">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                     <GridPane.margin>
+                        <Insets right="10.0" />
+                     </GridPane.margin>
+                  </Label>
+                  <Label alignment="CENTER_RIGHT" contentDisplay="RIGHT" text="Preço Total:" textFill="WHITE" GridPane.halignment="RIGHT" GridPane.rowIndex="2">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                     <GridPane.margin>
+                        <Insets right="10.0" />
+                     </GridPane.margin>
+                  </Label>
+                  <Label alignment="CENTER_RIGHT" contentDisplay="RIGHT" text="Entregue:" textFill="WHITE" GridPane.halignment="RIGHT" GridPane.rowIndex="5">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                     <GridPane.margin>
+                        <Insets right="10.0" />
+                     </GridPane.margin>
+                  </Label>
+                  <Label alignment="CENTER_RIGHT" contentDisplay="RIGHT" text="Pronto:" textFill="WHITE" GridPane.halignment="RIGHT" GridPane.rowIndex="4">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                     <GridPane.margin>
+                        <Insets right="10.0" />
+                     </GridPane.margin>
+                  </Label>
+                  <Label alignment="CENTER_RIGHT" contentDisplay="RIGHT" text="Data:" textFill="WHITE" GridPane.halignment="RIGHT" GridPane.rowIndex="3">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                     <GridPane.margin>
+                        <Insets right="10.0" />
+                     </GridPane.margin>
+                  </Label>
+                  <Label alignment="CENTER_RIGHT" contentDisplay="RIGHT" text="Garçom:" textFill="WHITE" GridPane.halignment="RIGHT" GridPane.rowIndex="6">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                     <GridPane.margin>
+                        <Insets right="10.0" />
+                     </GridPane.margin>
+                  </Label>
+                  <Label fx:id="lblNumeroPedido" prefHeight="20.0" prefWidth="168.0" textFill="WHITE" GridPane.columnIndex="1">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                     <GridPane.margin>
+                        <Insets left="10.0" />
+                     </GridPane.margin>
+                  </Label>
+                  <Label fx:id="lblNumeroMesa" prefHeight="20.0" prefWidth="168.0" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                     <GridPane.margin>
+                        <Insets left="10.0" />
+                     </GridPane.margin>
+                  </Label>
+                  <Label fx:id="lblGarçom" prefHeight="20.0" prefWidth="168.0" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="6">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                     <GridPane.margin>
+                        <Insets left="10.0" />
+                     </GridPane.margin>
+                  </Label>
+                  <Label fx:id="lblEntregue" prefHeight="20.0" prefWidth="168.0" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="5">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                     <GridPane.margin>
+                        <Insets left="10.0" />
+                     </GridPane.margin>
+                  </Label>
+                  <Label fx:id="lblData" prefHeight="20.0" prefWidth="168.0" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                     <GridPane.margin>
+                        <Insets left="10.0" />
+                     </GridPane.margin>
+                  </Label>
+                  <Label fx:id="lblPreçoTotal" prefHeight="20.0" prefWidth="168.0" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                     <GridPane.margin>
+                        <Insets left="10.0" />
+                     </GridPane.margin>
+                  </Label>
+                  <Label fx:id="lblPronto" prefHeight="20.0" prefWidth="168.0" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="4">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                     <GridPane.margin>
+                        <Insets left="10.0" />
+                     </GridPane.margin>
+                  </Label>
+               </children>
+            </GridPane>
+            <Label fx:id="lblCaabecalho" alignment="CENTER" contentDisplay="CENTER" layoutX="45.0" layoutY="14.0" text="Selecione um Pedido na Tabela" textFill="WHITE">
+               <font>
+                  <Font name="Berlin Sans FB" size="23.0" />
+               </font>
+            </Label>
+            <TableView fx:id="tableViewPratosInPedidos" layoutX="32.0" layoutY="261.0" prefHeight="169.0" prefWidth="331.0">
+              <columns>
+                <TableColumn fx:id="tableViewPratosInPedidosPratos" prefWidth="75.0" text="Pratos" />
+                  <TableColumn fx:id="tableViewPratosInPedidosQtdade" prefWidth="75.0" text="Qtdade" />
+              </columns>
+               <columnResizePolicy>
+                  <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+               </columnResizePolicy>
+            </TableView>
+         </children></Pane>
+   </children>
+</AnchorPane>

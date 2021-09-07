@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="570.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gestaorestaurantesfx.controller.FXMLHomeController">
+   <children>
+      <Pane layoutX="132.0" layoutY="44.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="690.0" prefWidth="700.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <ImageView fitHeight="575.0" fitWidth="902.0" layoutX="-1.0" layoutY="-2.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../fundos/home_background_5.jpg" />
+               </image>
+            </ImageView>
+            <Button layoutX="799.0" layoutY="14.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onMouseClicked="#editarPerfil" style="-fx-background-color: transparent; -fx-border-color: #ffffff;" text="Editar Meu Perfil" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="9.0" />
+               </font>
+            </Button>
+            <Label fx:id="lblMostrarTipoCargo" layoutX="759.0" layoutY="43.0" text="Login como Administrador" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="10.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="82.0" fitWidth="78.0" layoutX="256.0" layoutY="139.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../imagens/logoRestauranteKumiBebiWhite.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="334.0" layoutY="130.0" prefHeight="96.0" prefWidth="308.0" text="Bem-Vindo ao Restaurante KumiBebi" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+               <font>
+                  <Font name="Berlin Sans FB Bold" size="28.0" />
+               </font>
+            </Label>
+            <Label layoutX="333.0" layoutY="216.0" text="Os melhores preços e sabores da capital" textFill="WHITE">
+               <font>
+                  <Font name="Berlin Sans FB" size="19.0" />
+               </font>
+            </Label>
+            <Label layoutX="862.0" layoutY="254.0" />
+            <Label fx:id="lblData" layoutX="788.0" layoutY="517.0" text="Data" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="10.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane fx:id="borderpane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1024.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gestaorestaurantesfx.controller.FXMLBorderPaneMainCozinhaController">
+   <left>
+      <VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="570.0" prefWidth="124.0" style="-fx-background-color: #404040;" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="98.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../imagens/logoRestauranteKumiBebi.png" />
+               </image>
+               <VBox.margin>
+                  <Insets left="10.0" />
+               </VBox.margin>
+            </ImageView>
+            <Button fx:id="btnHome" alignment="CENTER" mnemonicParsing="false" onMouseClicked="#handleHome" prefHeight="37.0" prefWidth="124.0" style="-fx-background-color: transparent; -fx-text-fill: #f0f0f0;" text="Home">
+               <VBox.margin>
+                  <Insets top="20.0" />
+               </VBox.margin>
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnPratos" mnemonicParsing="false" onMouseClicked="#handlePratos" prefHeight="37.0" prefWidth="125.0" style="-fx-background-color: transparent; -fx-text-fill: #f0f0f0;" text="Pratos">
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnPedidos" mnemonicParsing="false" onMouseClicked="#handlePedidos" prefHeight="38.0" prefWidth="126.0" style="-fx-background-color: transparent; -fx-text-fill: #f0f0f0;" text="Pedidos">
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <Button mnemonicParsing="false" onMouseClicked="#poweroff" prefHeight="40.0" prefWidth="129.0" style="-fx-background-color: transparent; -fx-text-fill: #f0f0f0;">
+               <VBox.margin>
+                  <Insets top="250.0" />
+               </VBox.margin>
+               <graphic>
+                  <FontAwesomeIconView fill="WHITE" glyphName="POWER_OFF" size="15" />
+               </graphic>
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <Label alignment="CENTER" text="Power by Saiman" textFill="WHITE">
+               <VBox.margin>
+                  <Insets left="30.0" />
+               </VBox.margin>
+               <font>
+                  <Font size="8.0" />
+               </font>
+            </Label>
+         </children>
+         <opaqueInsets>
+            <Insets right="3.0" />
+         </opaqueInsets>
+      </VBox>
+   </left>
+   <top>
+      <HBox alignment="CENTER_RIGHT" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="30.0" prefWidth="1024.0" style="-fx-background-color: #303030;" BorderPane.alignment="CENTER">
+         <children>
+            <HBox HBox.hgrow="ALWAYS">
+               <children>
+                  <Label prefHeight="30.0" text="Gestão de Pedidos de Restaurantes" textFill="#5e5e5e">
+                     <padding>
+                        <Insets left="5.0" />
+                     </padding>
+                  </Label>
+               </children>
+            </HBox>
+            <Label fx:id="btnMinus" alignment="CENTER" contentDisplay="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseClicked="#handleMinus" onMouseEntered="#hoverBtnMinusEntered" onMouseExited="#hoverBtnMinusExited" prefHeight="30.0" prefWidth="30.0">
+               <graphic>
+                  <FontAwesomeIconView fill="WHITE" glyphName="MINUS" size="1.3em" />
+               </graphic>
+            </Label>
+            <Label fx:id="btnClose" alignment="CENTER" contentDisplay="CENTER" layoutX="780.0" layoutY="8.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseClicked="#handleClose" onMouseEntered="#hoverBtnCloseEntered" onMouseExited="#hoverBtnCloseExited" prefHeight="30.0" prefWidth="30.0">
+               <graphic>
+                  <FontAwesomeIconView fill="WHITE" glyphName="CLOSE" size="1.3em" />
+               </graphic>
+            </Label>
+         </children></HBox>
+   </top>
+</BorderPane>

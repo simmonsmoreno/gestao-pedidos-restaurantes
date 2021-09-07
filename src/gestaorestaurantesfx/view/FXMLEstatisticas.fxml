@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+
+<BorderPane fx:id="borderpane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="570.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gestaorestaurantesfx.controller.FXMLEstatisticasController">
+   <top>
+      <HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="30.0" prefWidth="900.0" style="-fx-background-color: #404040;" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="btnHoje" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onMouseClicked="#handleHoje" prefHeight="30.0" prefWidth="450.0" style="-fx-background-color: transparent;" text="Hoje" textFill="#b9b9b9" />
+            <Button fx:id="btnSempre" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onMouseClicked="#handleSempre" prefHeight="30.0" prefWidth="450.0" style="-fx-background-color: transparent;" text="Sempre" textFill="#b9b9b9" />
+         </children>
+      </HBox>
+   </top>
+</BorderPane>

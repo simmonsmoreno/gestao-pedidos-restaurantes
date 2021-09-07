@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<Pane fx:id="parent" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1024.0" style="-fx-background-color: #303138;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gestaorestaurantesfx.controller.FXMLBorderPaneLoginController">
+   <children>
+      <HBox fx:id="top" alignment="CENTER_RIGHT" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="30.0" prefWidth="1024.0" style="-fx-background-color: #303030;">
+         <padding>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </padding>
+         <children>
+            <HBox HBox.hgrow="ALWAYS">
+               <children>
+                  <Label text="Gestão de Pedidos de Restaurantes" textFill="#b9b5b5" />
+               </children>
+            </HBox>
+            <Label fx:id="btnMinus" alignment="CENTER" contentDisplay="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseClicked="#handleMinus" onMouseEntered="#hoverBtnMinusEntered" onMouseExited="#hoverBtnMinusExited" prefHeight="30.0" prefWidth="30.0">
+               <graphic>
+                  <FontAwesomeIconView fill="WHITE" glyphName="MINUS" size="1.3em" />
+               </graphic>
+            </Label>
+            <Label fx:id="btnClose" alignment="CENTER" contentDisplay="CENTER" layoutX="775.0" layoutY="10.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseClicked="#handleClose" onMouseEntered="#hoverBtnCloseEntered" onMouseExited="#hoverBtnCloseExited" prefHeight="30.0" prefWidth="30.0">
+               <graphic>
+                  <FontAwesomeIconView fill="WHITE" glyphName="CLOSE" size="1.3em" />
+               </graphic>
+            </Label>
+         </children>
+      </HBox>
+      <Pane fx:id="content" layoutY="30.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="570.0" prefWidth="1024.0" styleClass="parent">
+         <children>
+            <ImageView fitHeight="570.0" fitWidth="1024.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../fundos/fundo_blur.jpeg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="423.0" fitWidth="400.0" layoutX="312.0" layoutY="78.0" opacity="0.11" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../fundos/fundo.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="73.0" fitWidth="90.0" layoutX="476.0" layoutY="78.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../imagens/logoRestauranteKumiBebi.png" />
+               </image>
+            </ImageView>
+            <Button layoutX="393.0" layoutY="315.0" mnemonicParsing="false" onAction="#handleEntrar" prefHeight="45.0" prefWidth="257.0" style="-fx-background-color: #ff8700;" text="Entrar" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Button>
+            <Label fx:id="lblErro" layoutX="405.0" layoutY="285.0" text="Usuario ou Senha Inválida! Tente Novamente" textFill="#b90000" />
+            <HBox alignment="CENTER_LEFT" layoutX="399.0" layoutY="177.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="45.0" prefWidth="250.0" style="-fx-background-color: #363B41;">
+               <children>
+                  <Label alignment="CENTER" contentDisplay="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="45.0" prefWidth="45.0" style="-fx-background-color: #363B41;">
+                     <graphic>
+                        <FontAwesomeIconView fill="WHITE" glyphName="USER" size="1.5em" />
+                     </graphic>
+                  </Label>
+                  <TextField fx:id="txtUser" minHeight="-Infinity" minWidth="-Infinity" onMouseClicked="#pararErro" prefHeight="45.0" prefWidth="45.0" promptText="usuário ou email" style="-fx-background-color: #363B41;" HBox.hgrow="ALWAYS">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </TextField>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" layoutX="399.0" layoutY="233.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="45.0" prefWidth="250.0" style="-fx-background-color: #363B41;">
+               <children>
+                  <Label alignment="CENTER" contentDisplay="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="45.0" prefWidth="45.0" style="-fx-background-color: #363B41;">
+                     <graphic>
+                        <FontAwesomeIconView fill="WHITE" glyphName="LOCK" size="1.5em" />
+                     </graphic>
+                  </Label>
+                  <PasswordField fx:id="txtSenha" minHeight="-Infinity" minWidth="-Infinity" onMouseClicked="#pararErro" prefHeight="45.0" prefWidth="45.0" promptText="senha" style="-fx-background-color: #363B41;" HBox.hgrow="ALWAYS">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </PasswordField>
+               </children>
+            </HBox>
+            <Label layoutX="421.0" layoutY="531.0" text="Universidade de Cabo Verde, 2019" textFill="#3c3c3c" />
+            <Label layoutX="816.0" layoutY="531.0" text="Programação Orientado a Objectos" textFill="#3c3c3c" />
+            <Label layoutX="479.0" layoutY="456.0" style="-fx-text-fill: #c3c3c3;" text="Coord. Eloy Tavares">
+               <font>
+                  <Font size="9.0" />
+               </font>
+            </Label>
+            <Label layoutX="483.0" layoutY="446.0" style="-fx-text-fill: #c3c3c3;" text="Power by Saiman">
+               <font>
+                  <Font size="9.0" />
+               </font>
+            </Label>
+            <Line endX="100.0" layoutX="524.0" layoutY="445.0" startX="-100.0" stroke="WHITE" />
+         </children>
+      </Pane>
+   </children>
+</Pane>
