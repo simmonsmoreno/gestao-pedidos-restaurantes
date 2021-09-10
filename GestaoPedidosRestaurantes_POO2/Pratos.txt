@@ -1,0 +1,5 @@
+cachupa|PRAT1000|Prato Principal|150|0|0
+grogu|PRAT1001|Bebidas|20|2|2
+arroz|PRAT1002|Prato Principal|100|1|1
+coca-cola|PRAT1003|Bebidas|80|3|0
+salada|PRAT1004|Entrada|100|4|1
