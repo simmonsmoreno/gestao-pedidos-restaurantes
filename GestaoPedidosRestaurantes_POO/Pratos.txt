@@ -1,0 +1,28 @@
+cachupa|1000|Prato Principal|250|3|0
+grogu|1001|Bebidas|20|4|2
+arroz|1002|Prato Principal|100|1|1
+coca-cola|1003|Bebidas|80|3|0
+salada|1004|Entrada|70|4|1
+batata-fritas|1005|Fast-Food|150|0|0
+hamburger|1006|Fast-Food|350|0|0
+shwarma|1007|Fast-Food|300|0|0
+Congo|1008|Prato Principal|150|0|0
+Lasanha|1009|Prato Principal|450|0|0
+Bacalhau|1010|Prato Principal|750|0|0
+Sapatinha|1011|Prato Principal|150|0|0
+fanta|1012|Bebidas|80|1|0
+sprit|1013|Bebidas|80|0|0
+kul|1014|Bebidas|50|0|0
+caipirinha|1015|Bebidas|65|0|0
+sopa|1016|Entrada|70|0|0
+sparguete|1017|Entrada|90|0|0
+cha|1018|Entrada|50|0|0
+Pao-Timothe|1019|Fast-Food|250|0|0
+café|1020|Pequeno-Almoço|50|0|0
+bolo|1021|Pequeno-Almoço|70|0|0
+pastel|1022|Pequeno-Almoço|30|0|0
+pao|1023|Pequeno-Almoço|20|0|0
+leite|1024|Pequeno-Almoço|50|0|0
+gelado|1025|Sobremesa|170|0|0
+pudim|1026|Sobremesa|80|0|0
+salada-fruta|1027|Sobremesa|145|0|0

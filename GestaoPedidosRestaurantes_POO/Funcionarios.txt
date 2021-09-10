@@ -1,0 +1,4 @@
+simao|1000|110406|administrador|13-04-1999|masculino|calabacera|9848806|25/May/2019 22:08
+garcom1|1001|123456|garçom|15-08-1999|feminino|terraBranca|9876543|25/May/2019 22:38
+cozinheiro1|1002|654321|cozinha|12-12-2029|masculino|saoFelipe|1234569|25/May/2019 22:39
+eloy|1003|eloytavares|administrador|20-11-1980|masculino|saoFelipe|9777777|28/May/2019 12:48
